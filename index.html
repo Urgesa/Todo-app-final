@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced To-Do List App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Advanced To-Do List</h1>
+      <p>A powerful task manager with categories, dark mode, and more!</p>
+      <label class="switch">
+        <input type="checkbox" id="themeToggle">
+        <span class="slider round"></span>
+      </label>
+    </header>
+
+    <div class="input-section">
+      <input type="text" id="taskInput" placeholder="Enter task..." />
+      <select id="categorySelect">
+        <option value="Personal">Personal</option>
+        <option value="School">School</option>
+        <option value="Work">Work</option>
+      </select>
+      <select id="prioritySelect">
+        <option value="Low">Low</option>
+        <option value="Medium" selected>Medium</option>
+        <option value="High">High</option>
+      </select>
+      <button onclick="addTask()">Add</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <footer>
+      <h3>About This App</h3>
+      <p>This to-do list supports categories, editing, priorities, and even saves your tasks between visitse.Urgesa J.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
